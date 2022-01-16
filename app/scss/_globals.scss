@@ -20,14 +20,48 @@ body {
     }
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
 a, a:visited, a:hover {
     text-decoration: none;
 }
 
 // Spacing 
-.container {
-   padding-left: 1.5rem;
-   padding-right: 1.5rem;
+.container { 
+   max-width: 69.5625rem;
+   margin: auto;
+
+   &--pall {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+   }
+
+   &--py {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+   }
+
+   &--px {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+   }
+
+   &--pt {
+    padding-top: 2.25rem;
+   }
+   &--pr {
+    padding-right: 1.5rem;
+   }
+   &--pb {
+    padding-bottom: 2.25rem;
+   }
+   &--pl {
+    padding-left: 1.5rem;
+   }
 }
 
 // Flexbox
@@ -50,6 +84,7 @@ a, a:visited, a:hover {
 
 //buttons
 button, .button {
+    display: inline-block;
     padding: 0.875rem 2.875rem;
     background: $brightCyan;
     border: 0;
@@ -57,6 +92,14 @@ button, .button {
     cursor: pointer;
     color: $white;
     font-weight: 700;
+    font-size: $font-sm;
+    color: $white;
+    transition: opacity 300ms ease-in-out;
+
+    &:hover {
+        background: salmon;
+
+    }
 }
 
 // Visibility

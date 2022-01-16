@@ -43,16 +43,10 @@
 
     &__logo {
 
-
-        > h1 {
-            color: $white;
-        }
-
-
-        //  img {
-        //     width: 8.8125rem;
-        //     height: 1.375rem;
-        //  }
+         img {
+          width: 8.8125rem;
+          height: 1.375rem;
+         }
 
     }
 
@@ -110,16 +104,15 @@
                 height: .3125rem;
                 left: 0;
                 right: 0;
-                bottom: -48px;
-                background: $brightCyan;
+                bottom: -2rem;
+                background: salmon;
                 opacity: 0;
                 transition: opacity 300ms ease-in-out;
             }
 
             &:hover {
-                color: $brightCyan;
+                color: salmon;
                 
-
                 &::before {
                     opacity: 1;
                 }
@@ -128,16 +121,6 @@
         }
     }
 
-
-    &__cta {
-        font-size: $font-sm;
-        color: $white;
-        transition: opacity 300ms ease-in-out;
-
-        &:hover {
-            opacity: 0.75;
-        }
-    }
 }
 
 

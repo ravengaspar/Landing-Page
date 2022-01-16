@@ -1,0 +1,88 @@
+.hero {
+
+    background: $grayishBlue;
+
+    .container {
+        @include breakpoint-up(large){
+            display: flex;
+            align-items: center;
+            }       
+    }
+
+    &__image {
+        
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left center;
+        min-height: 17.5rem;
+        
+        @include breakpoint-up(large) {
+            flex: 3;
+            order: 2;
+            height: 41rem;
+            background-image: none;
+        }
+
+        &::before {
+            content: "";
+            position: absolute; 
+            height: 100%;
+            width: 100%;
+            background-image: url(/images/plate-svgrepo-com.svg);
+            background-size: 95%;
+            background-repeat: no-repeat;
+            background-position: center center; 
+
+            @include breakpoint-up(large) {
+                width: 100%;
+            }
+
+        }
+
+        &::after {
+            content: "";
+            position: absolute; 
+            height: 100%;
+            width: 100%;
+            background-image: url(/images/1541579363.svg);
+            background-size: 63%;
+            background-repeat: no-repeat;
+            background-position: center center; 
+        }
+
+    }
+
+    &__text {
+
+        text-align: center;
+
+        @include breakpoint-up(large) {
+            flex: 2;
+            order: 1;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: $font-xl;
+            font-weight: extra-bold;
+            line-height: 1.15;
+            color: $white;
+            margin-bottom: 1.5rem;
+
+            @include breakpoint-up(large) {
+                font: $font-xl;
+            }
+        }
+
+        p {
+            font-size: $font-sm;
+            line-height: 1.5;
+            color: $grayishWhite;
+            margin-bottom: 2.25rem;
+        }
+
+    }
+
+
+}
