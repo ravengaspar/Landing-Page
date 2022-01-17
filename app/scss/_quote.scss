@@ -1,0 +1,22 @@
+.quote {
+    background-color: $cucumberGreen;
+    min-height: 24rem;
+    
+    &__saying {
+        font-size: $font-lg;
+        font-weight: 500;
+        font-style: italic;
+    
+    }
+
+    &__author {
+
+        margin-top: 1rem;
+        padding-right: 5.5rem;
+        font-size: $font-med;
+        font-weight: 700;
+        text-align: right;
+
+    }
+
+}

@@ -63,26 +63,10 @@
             text-align: left;
         }
 
-        h1 {
-            font-size: $font-xl;
-            font-weight: extra-bold;
-            line-height: 1.15;
-            color: $white;
-            margin-bottom: 1.5rem;
 
-            @include breakpoint-up(large) {
-                font: $font-xl;
-            }
         }
-
-        p {
-            font-size: $font-sm;
-            line-height: 1.5;
-            color: $grayishWhite;
-            margin-bottom: 2.25rem;
-        }
-
-    }
 
 
 }
+
+
